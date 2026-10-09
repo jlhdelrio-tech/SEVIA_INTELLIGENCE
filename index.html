@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f3a8a">
+<title>SEVIA Intelligence · Prueba</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div><h1>SEVIA Intelligence</h1><p class="sub">Modo prueba · simula la IA con tus datos</p></div>
+  <div class="ctl">
+    <select id="rol" aria-label="Perfil"><option value="admin">Admin</option><option value="usuario">Usuario</option></select>
+    <button class="ghost" id="btnDatos">Datos</button>
+    <button class="ghost" id="btnReg">Registro</button>
+  </div>
+</header>
+<div class="ctx"><span id="perChip">Sin datos</span><span id="regChip">Regla productividad_v2</span><span>Consolidado + Maestro</span></div>
+<main id="chat"></main>
+<div class="sug" id="sug"></div>
+<div class="composer">
+  <input id="inp" type="text" placeholder="Escribe tu pregunta…" enterkeyhint="send" autocomplete="off">
+  <button id="send">Enviar</button>
+</div>
+<input type="file" id="file" accept="application/json,.json" hidden>
+<div class="sheet" id="sheet" hidden>
+  <div class="bar"><b id="sheetTitle">Registro de la prueba</b><button class="ghost" id="btnClose">Cerrar</button></div>
+  <div class="body" id="sheetBody"></div>
+</div>
+<noscript>Esta página necesita JavaScript.</noscript>
+<script src="assets/core.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
