@@ -39,10 +39,8 @@ function openDatos(){
   a.appendChild(x);a.appendChild(y);a.appendChild(z);bd.appendChild(a);sh.hidden=false;}
 function welcome(){
   chat.innerHTML='';
-  bubble('sys','Prueba del chat · '+PER+' · Perfil: '+(ROL==='admin'?'Admin':'Usuario'));
   const b=bubble('bot');
-  b.appendChild(el('div','head','Hola. Soy la versión de prueba de SEVIA Intelligence.'));
-  b.appendChild(el('div',null,'Aún no uso IA real: reconozco la pregunta, la ligo a una consulta del catálogo y calculo con tus datos. Toca una pregunta sugerida o escribe con tus palabras. Si no estoy diseñado para algo, te lo diré y podrás solicitar el análisis.'));
+  b.appendChild(el('div','head','SEVIA Intelligence está en desarrollo.'));
 }
 function renderSug(){
   const s=document.getElementById('sug');s.innerHTML='';
